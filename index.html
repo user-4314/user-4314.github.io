@@ -6,6 +6,7 @@
     $(".well").children().css("color", "brown");
     $("#長冠企鵝").parent().css("background-color", "yellow")
     $("#長冠企鵝").prop("disabled", true);
+  
   });
 </script>
 <h1>Lab3 Personal Page and Lab4</h1>
@@ -28,7 +29,7 @@
     height: 45%;
     border-radius: 70% 70% 60% 60%;
   }
-
+  
   .penguin-bottom {
     top: 40%;
     left: 23.5%;
@@ -206,14 +207,13 @@
 <h2>請問這是哪一種企鵝?</h2>
 <div class="row">
     <div class="col-xs-12">
-      <div class="well" id="left-well">
+      <div class="well" id="well">
         <button class="btn btn-default target" id="皇帝企鵝">皇帝企鵝</button>
         <button class="btn btn-default target" id="國王企鵝">國王企鵝</button>
         <button class="btn btn-default target" id="阿德利企鵝">阿德利企鵝</button>
         <button class="btn btn-default target" id="長冠企鵝">長冠企鵝</button>
         <div class="row">
-          <div class="col-xs-12">
-           <input type="text" placeholder="其他種企鵝" required>
+            <input type="text" placeholder="其他種企鵝" required>
            <button type="submit">Submit</button>
            <button type="delete" class=" btn-danger">delete</button>
          </div>
