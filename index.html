@@ -1,10 +1,16 @@
-<h1>Lab3 Personal Page</h1>
+<script>
+  $(document).ready(function() {
+    $("div").addClass("animated bounce");
+    $("#長冠企鵝").addClass("animated  fadeOut");
+    $("#src").addClass("animated shake");
+    $(".well").children().css("color", "blue");
+    $("#阿德利企鵝").prop("disabled", true);
+  });
+</script>
+<h1>Lab3 Personal Page and Lab4</h1>
 <h2>用freecodecamp上的程式碼來試做一種企鵝</h2>
 <style>
   .penguin {
-    /* Only change code below this line */
-
-    /* Only change code above this line */
     position: relative;
     margin: auto;
     display: block;
@@ -197,8 +203,17 @@
   </div>
 </div>
 <h2>請問這是哪一種企鵝?</h2>
-<label for="皇帝企鵝"><input id="皇帝企鵝" type="radio" name="皇帝企鵝-國王企鵝"> 皇帝企鵝</label>
-<label for="國王企鵝"><input id="國王企鵝" type="radio" name="皇帝企鵝-國王企鵝"> 國王企鵝</label><br>
-<h1 style=color:red >解答</h1>
+<div class="row">
+    <div class="col-xs-12">
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="皇帝企鵝">皇帝企鵝</button>
+        <button class="btn btn-default target" id="國王企鵝">國王企鵝</button>
+        <button class="btn btn-default target" id="阿德利企鵝">阿德利企鵝</button>
+        <button class="btn btn-default target" id="長冠企鵝">長冠企鵝</button>
+        <input type="text" placeholder="其他種企鵝" required>
+      </div>
+    </div>
+<h1 style=color:red class="text-primary text-center">解答</h1>
 <h2>這是皇帝企鵝</h2>
-<img src="https://resource01-proxy.ulifestyle.com.hk/res/v3/image/content/2335000/2336624/2122_1024.jpg" width=300px height=300px  >
+<img src="https://resource01-proxy.ulifestyle.com.hk/res/v3/image/content/2335000/2336624/2122_1024.jpg"class="img-responsive" >
+<button class="btn btn-block btn-primary">Like</button>
